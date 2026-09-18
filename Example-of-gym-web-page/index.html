@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Name — Gym & Fitness Center</title>
+<meta name="description" content="Gym Name — a top-tier gym with professional trainers, modern equipment and programs for every goal.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <div class="preloader__logo">Gym<span>Name</span></div>
+    <div class="preloader__bar"><span id="preloaderBar"></span></div>
+  </div>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#hero" class="logo">Gym<span>Name</span></a>
+
+    <nav class="nav__links">
+      <a href="#programi">Programs</a>
+      <a href="#o-nama">About</a>
+      <a href="#treneri">Trainers</a>
+      <a href="#cjenik">Pricing</a>
+      <a href="#kontakt">Contact</a>
+    </nav>
+
+    <a href="#kontakt" class="btn btn--accent btn--sm nav__cta">Free trial</a>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#programi">Programs</a>
+  <a href="#o-nama">About</a>
+  <a href="#treneri">Trainers</a>
+  <a href="#cjenik">Pricing</a>
+  <a href="#kontakt">Contact</a>
+</div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__grid"></div>
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <i></i> New members — first session free
+        </div>
+
+        <h1 class="hero__title">
+          <span class="line"><span>BUILD</span></span>
+          <span class="line"><span>YOUR <em>STRENGTH</em></span></span>
+          <span class="line"><span>NO EXCUSES</span></span>
+        </h1>
+
+        <p class="hero__text">
+          A modern gym with top-tier equipment, expert trainers and programs
+          tailored to your goal. Whether you're starting today or you've been
+          training for years — you're welcome here.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#cjenik" class="btn btn--accent">
+            Start today
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#programi" class="btn btn--ghost">View programs</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <strong data-count="100" data-suffix="+">0</strong>
+            <span>Active members</span>
+          </div>
+          <div class="hero__stat">
+            <strong data-count="3" data-suffix="">0</strong>
+            <span>Trainers</span>
+          </div>
+          <div class="hero__stat">
+            <strong data-count="12" data-suffix="+">0</strong>
+            <span>Years of experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-cue__line"></div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <div class="marquee__item">Strength</div>
+      <div class="marquee__item">Discipline</div>
+      <div class="marquee__item">Results</div>
+      <div class="marquee__item">Conditioning</div>
+      <div class="marquee__item">Focus</div>
+      <div class="marquee__item">Community</div>
+      <div class="marquee__item">Strength</div>
+      <div class="marquee__item">Discipline</div>
+      <div class="marquee__item">Results</div>
+      <div class="marquee__item">Conditioning</div>
+      <div class="marquee__item">Focus</div>
+      <div class="marquee__item">Community</div>
+    </div>
+  </div>
+
+  <!-- ============ PROGRAMS ============ -->
+  <section class="section" id="programi">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow reveal">Our programs</span>
+        <h2 class="section-title reveal" style="--d:80ms">
+          Find the training <em>that's right for you</em>
+        </h2>
+        <p class="section-sub reveal" style="--d:160ms">
+          From building muscle to functional fitness — every program is led by
+          a certified trainer who tracks your progress week by week.
+        </p>
+      </div>
+
+      <div class="programs__grid">
+        <article class="program reveal" style="--d:0ms">
+          <div class="program__img" style="background-image:url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80')"></div>
+          <span class="program__num">01</span>
+          <h3>Strength &amp; Muscle Mass</h3>
+          <p>Progressive overload, free weights and a structured plan for maximum muscle growth.</p>
+          <a href="#kontakt" class="program__link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="program reveal" style="--d:110ms">
+          <div class="program__img" style="background-image:url('')"></div>
+          <span class="program__num">02</span>
+          <h3>HIIT &amp; Cardio</h3>
+          <p>High-intensity interval training that burns fat and builds endurance in record time.</p>
+          <a href="#kontakt" class="program__link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="program reveal" style="--d:220ms">
+          <div class="program__img" style="background-image:url('')"></div>
+          <span class="program__num">03</span>
+          <h3>Mobility &amp; Yoga</h3>
+          <p>Improve mobility, reduce injury risk and relax your body with guided sessions.</p>
+          <a href="#kontakt" class="program__link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="program reveal" style="--d:330ms">
+          <div class="program__img" style="background-image:url('')"></div>
+          <span class="program__num">04</span>
+          <h3>1-on-1 Personal Training</h3>
+          <p>An individual plan, a trainer's full attention, and the fastest path to your goal.</p>
+          <a href="#kontakt" class="program__link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="o-nama">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual reveal reveal--left">
+          <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=900&q=80"
+               alt="Interior of the IronCore gym" loading="lazy">
+          <div class="about__badge">
+            <strong>12+</strong>
+            <span>years of experience coaching<br>and preparing athletes</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <span class="eyebrow reveal">About us</span>
+          <h2 class="section-title reveal" style="--d:80ms">
+            More than a gym — <em>your second home</em>
+          </h2>
+          <p class="section-sub reveal" style="--d:150ms">
+            Gym Name grew out of a simple idea: top-tier training conditions shouldn't
+            be a privilege. Since 2013 we've been building a space where everyone feels
+            welcome — from complete beginners to professional athletes.
+          </p>
+
+          <ul class="about__list">
+            <li class="reveal" style="--d:300ms">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span><strong>Free assessment</strong> of body composition and mobility upon signup.</span>
+            </li>
+            <li class="reveal" style="--d:380ms">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span><strong>Progress-tracking app</strong> for training plans and nutrition.</span>
+            </li>
+            <li class="reveal" style="--d:460ms">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span><strong>Open 6am–11pm</strong>, 7 days a week — train whenever suits you.</span>
+            </li>
+          </ul>
+
+          <a href="#kontakt" class="btn btn--accent reveal" style="--d:540ms">
+            Book a tour
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COUNTERS ============ -->
+  <section class="counters">
+    <div class="container">
+      <div class="counters__grid">
+        <div class="counter reveal" style="--d:0ms">
+          <strong data-count="100" data-suffix="+">0</strong>
+          <span>Satisfied members</span>
+        </div>
+        <div class="counter reveal" style="--d:100ms">
+          <strong data-count="96" data-suffix="%">0</strong>
+          <span>Member retention</span>
+        </div>
+        <div class="counter reveal" style="--d:200ms">
+          <strong data-count="40" data-suffix="+">0</strong>
+          <span>weekly sessions</span>
+        </div>
+        <div class="counter reveal" style="--d:300ms">
+          <strong data-count="3" data-suffix="">0</strong>
+          <span>Certifications and licenses</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAINERS ============ -->
+  <section class="section" id="treneri">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow reveal">Our team</span>
+        <h2 class="section-title reveal" style="--d:80ms">
+          The people who get you <em>to your goal</em>
+        </h2>
+        <p class="section-sub reveal" style="--d:160ms">
+          Every one of our trainers holds relevant certifications and years of
+          hands-on experience working with different types of trainees.
+        </p>
+      </div>
+
+      <div class="trainers__grid">
+        <article class="trainer reveal" style="--d:0ms">
+          <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=700&q=80" alt="Marko Horvat, head strength coach" loading="lazy">
+          <div class="trainer__grad"></div>
+          <div class="trainer__info">
+            <p>Strength &amp; Conditioning</p>
+            <h3>YOUR NAME</h3>
+            <div class="trainer__socials">
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trainer reveal" style="--d:120ms">
+          <img src="" alt="Ana Kovač, functional training coach" loading="lazy">
+          <div class="trainer__grad"></div>
+          <div class="trainer__info">
+            <p>Functional Training</p>
+            <h3>YOUR NAME</h3>
+            <div class="trainer__socials">
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trainer reveal" style="--d:240ms">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80" alt="Ivan Perić, personal trainer" loading="lazy">
+          <div class="trainer__grad"></div>
+          <div class="trainer__info">
+            <p>Personal Training</p>
+            <h3>YOUR NAME</h3>
+            <div class="trainer__socials">
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trainer reveal" style="--d:360ms">
+          <img src="" alt="Lucija Babić, mobility coach" loading="lazy">
+          <div class="trainer__grad"></div>
+          <div class="trainer__info">
+            <p>Mobility &amp; Yoga</p>
+            <h3>YOUR NAME</h3>
+            <div class="trainer__socials">
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section" id="cjenik">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow reveal">Memberships</span>
+        <h2 class="section-title reveal" style="--d:80ms">
+          Choose your <em>plan</em>
+        </h2>
+        <p class="section-sub reveal" style="--d:160ms">
+          No hidden fees, no long-term contracts. Cancel or change your plan
+          anytime — with one click.
+        </p>
+      </div>
+
+      <div class="pricing__grid">
+        <!-- START -->
+        <div class="plan reveal" style="--d:0ms">
+          <div class="plan__name">Start</div>
+          <div class="plan__price">
+            <strong>29 KM</strong>
+            <span>/ month</span>
+          </div>
+          <p class="plan__desc">Ideal for beginners who want to get into shape.</p>
+
+          <ul class="plan__features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Gym access 6am–11pm</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Introductory training plan</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Body composition analysis</li>
+            <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg> Group classes</li>
+            <li class="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg> Personal training</li>
+          </ul>
+
+          <a href="#kontakt" class="btn btn--ghost btn--block">Choose Start</a>
+        </div>
+
+        <!-- PRO -->
+        <div class="plan plan--featured reveal" style="--d:130ms">
+          <span class="plan__tag">Most popular</span>
+          <div class="plan__name">Pro</div>
+          <div class="plan__price">
+            <strong>49 KM</strong>
+            <span>/ month</span>
+          </div>
+          <p class="plan__desc">The best balance of value and price for serious progress.</p>
+
+          <ul class="plan__features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Unlimited 24/7 access</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> All group classes</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Personalized nutrition plan</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 2 personal training sessions per month</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Progress-tracking app</li>
+          </ul>
+
+          <a href="#kontakt" class="btn btn--accent btn--block">Choose Pro</a>
+        </div>
+
+        <!-- ELITE -->
+        <div class="plan reveal" style="--d:260ms">
+          <div class="plan__name">Elite</div>
+          <div class="plan__price">
+            <strong>89 KM</strong>
+            <span>/ month</span>
+          </div>
+          <p class="plan__desc">Maximum dedication and an individual approach, no compromises.</p>
+
+          <ul class="plan__features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Everything in Pro</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 8 personal training sessions</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Monthly progress assessment</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Physiotherapist 2× monthly</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Priority booking</li>
+          </ul>
+
+          <a href="#kontakt" class="btn btn--ghost btn--block">Choose Elite</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow reveal">Testimonials</span>
+        <h2 class="section-title reveal" style="--d:80ms">
+          What <em>our members</em> say
+        </h2>
+      </div>
+
+      <div class="slider reveal" id="slider">
+        <div class="slider__track" id="sliderTrack">
+
+          <div class="slide">
+            <div class="slide__quote">"</div>
+            <p>
+              In one year I lost 18 kilograms and I've never felt better.
+              The trainers are patient, knowledgeable and always available for
+              any question. This isn't just a gym — it's a community.
+            </p>
+            <div class="slide__author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Petar Novak" loading="lazy">
+              <div>
+                <strong>Your name</strong>
+                <span>Member for 2 years</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide__quote">"</div>
+            <p>
+              As a beginner I was scared to walk into a gym. From day one I felt
+              like I was in the right place. The program was tailored to me, and
+              the results came faster than I expected.
+            </p>
+            <div class="slide__author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Maja Jurić" loading="lazy">
+              <div>
+                <strong>Your name</strong>
+                <span>Member for 1 year</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide__quote">"</div>
+            <p>
+              As an active athlete I was looking for a place to seriously work on
+              strength during the off-season. The equipment is top-tier, the
+              atmosphere is motivating, and the trainers' expertise is on par with
+              professional clubs.
+            </p>
+            <div class="slide__author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Luka Marić" loading="lazy">
+              <div>
+                <strong>Your name</strong>
+                <span>Member for 3 years</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="slider__nav">
+        <button class="slider__btn" id="prevBtn" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="slider__dots" id="sliderDots"></div>
+        <button class="slider__btn" id="nextBtn" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal reveal--scale">
+        <div class="cta-banner__bg"></div>
+        <h2>Your first session is <em>on us</em></h2>
+        <p>
+          Come check out the space, meet the trainers and do a workout with zero
+          obligation. The rest is history.
+        </p>
+        <div class="cta-banner__actions">
+          <a href="#kontakt" class="btn btn--accent">Book for free</a>
+          <a href="tel:+3851234567" class="btn btn--ghost">+385 1 234 567</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="kontakt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow reveal">Contact</span>
+        <h2 class="section-title reveal" style="--d:80ms">
+          Get started <em>today</em>
+        </h2>
+        <p class="section-sub reveal" style="--d:160ms">
+          Fill out the form and we'll get back to you within 24 hours with a time
+          for your free intro session and tour.
+        </p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="info-card reveal" style="--d:0ms">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Address</h4>
+              <p>Your address</p>
+            </div>
+          </div>
+
+          <div class="info-card reveal" style="--d:100ms">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>+385 1 234 567</p>
+            </div>
+          </div>
+
+          <div class="info-card reveal" style="--d:200ms">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>info@yourgym.ba</p>
+            </div>
+          </div>
+
+          <div class="info-card reveal" style="--d:300ms">
+            <div class="info-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon – Sun: 06:00 – 23:00</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="form reveal reveal--right" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="ime">Full name</label>
+              <input type="text" id="ime" name="ime" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="telefon">Phone</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="+385 91 234 5678">
+            </div>
+            <div class="field">
+              <label for="program">Program</label>
+              <select id="program" name="program">
+                <option value="">Choose a program</option>
+                <option>Strength &amp; Muscle Mass</option>
+                <option>HIIT &amp; Cardio</option>
+                <option>Mobility &amp; Yoga</option>
+                <option>1-on-1 Personal Training</option>
+                <option>Still deciding</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="poruka">Message</label>
+            <textarea id="poruka" name="poruka" placeholder="Tell us your goal or ask a question..."></textarea>
+          </div>
+
+          <div class="form__success" id="formSuccess">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            Thanks! Your message has been sent — we'll get back to you within 24 hours.
+          </div>
+
+          <button type="submit" class="btn btn--accent btn--block">
+            Send inquiry
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#hero" class="logo">Your<span>Name</span></a>
+        <p>
+          A gym and fitness center at your address. Top-tier equipment, expert
+          trainers and a community that pushes you forward.
+        </p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.5 6.5a3 3 0 00-2.1-2.1C18.6 4 12 4 12 4s-6.6 0-8.4.4A3 3 0 001.5 6.5 31 31 0 001 12a31 31 0 00.5 5.5 3 3 0 002.1 2.1C5.4 20 12 20 12 20s6.6 0 8.4-.4a3 3 0 002.1-2.1A31 31 0 0023 12a31 31 0 00-.5-5.5z"/><path d="M10 15V9l5 3z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navigation</h4>
+        <ul class="footer__links">
+          <li><a href="#programi">Programs</a></li>
+          <li><a href="#o-nama">About</a></li>
+          <li><a href="#treneri">Trainers</a></li>
+          <li><a href="#cjenik">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Information</h4>
+        <ul class="footer__links">
+          <li><a href="#kontakt">Contact</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Newsletter</h4>
+        <p style="color:var(--muted);font-size:.9rem;">
+          Training tips and special offers — once a month, no spam.
+        </p>
+        <form class="newsletter" id="newsletterForm">
+          <input type="email" placeholder="you@email.com" aria-label="Email address" required>
+          <button type="submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> Gym Name. All rights reserved.</span>
+      <span>Designed with 💪 in your town</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="index.js"></script>
+</body>
+</html>

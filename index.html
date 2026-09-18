@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imran | Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/76f361a6ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ============================================
+    NAVIGATION
+    ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#hero" class="logo">Imr<span>Studio</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#portfolio" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary">Let's start</a>
+            </div>
+            <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================
+    HERO SECTION
+    ============================================ -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-code" aria-hidden="true"></i> Available for projects
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm<br>
+                        <span class="highlight">Imran</span>
+                    </h1>
+                    <div class="hero-role" id="typingText"></div>
+                    <p class="hero-description">
+                        I help businesses and individuals build modern, fast and responsive websites
+                        that leave a strong impression. I turn your ideas into digital reality.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <i class="fas fa-rocket" aria-hidden="true"></i> View my work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope" aria-hidden="true"></i> Contact me
+                        </a>
+                    </div>
+                    <!--<div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Completed projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Satisfied clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Months of experience</span>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-inner">
+                            <div class="hero-avatar-placeholder">
+                                <img src="./images/Basic-pictures/profilna.jpg" alt="Profile picture"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </div>
+    </section>
+
+    <!-- ============================================
+    ABOUT SECTION
+    ============================================ -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About me</h2>
+                <p class="section-subtitle">A passionate web developer focused on quality, performance and user experience.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <h3 class="align-center">I build websites that <span class="gradient-text"><br>work for you</span></h3>
+                    <p>
+                        I specialize in building modern, responsive and
+                        fully optimized websites. I treat every project
+                        as an opportunity to create something unique and valuable for the client.
+                    </p>
+                    <p>
+                        My philosophy is simple: <strong>good design + clean code = a successful product</strong>.
+                        I use the latest technologies and best practices to make sure your website
+                        not only looks great, but also works flawlessly.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">🎯 Attention to detail</span>
+                        <span class="tag">⚡ Fast delivery</span>
+                        <span class="tag">🔒 Security</span>
+                        <span class="tag">📱 Mobile-first</span>
+                        <span class="tag">🎨 Creativity</span>
+                        <span class="tag">🤝 Reliability</span>
+                    </div>
+                </div>
+                <div class="about-image-container reveal reveal-delay-1">
+                    <a class="remove-underline" href="./Example-of-modern-dental-web-page/index.html" target="_blank" rel="noopener noreferrer">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./images/Screenshot-mobile/Moderna-dentalna-web-stranica-mobitel.jpg">
+                            <img src="./images/Screenshot-dekstop/Moderna-dentalna-web-stranica-dekstop.jpg" alt="Screenshot of a modern dental website example" class="portfolio-img">
+                        </picture>
+                        <div>
+                            <h3 class="gradient-text-p sredina">My best project</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    SERVICES SECTION
+    ============================================ -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">Complete solutions for your online presence – from idea to launch.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-globe" aria-hidden="true"></i>
+                    </div>
+                    <h3>Websites</h3>
+                    <p>Modern, responsive and fast websites tailored to your business. From simple landing pages to complex portals.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User experience and interface design that guides your visitors toward the goal. Beautiful, functional and intuitive.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Your website looks perfect on every device – from mobile phones to large desktop screens.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-2 hide">
+                    <div class="service-icon">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Improve your search engine visibility and attract more organic traffic with the right SEO strategy.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-1 hide">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3>Website Redesign</h3>
+                    <p>Modernizing outdated websites with a new visual identity, better performance and a contemporary look.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-3 hide">
+                    <div class="service-icon">
+                        <i class="fas fa-headset" aria-hidden="true"></i>
+                    </div>
+                    <h3>Maintenance</h3>
+                    <p>Ongoing support, updates and security checks to keep your website running flawlessly at all times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    PORTFOLIO SECTION
+    ============================================ -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">Selected projects that showcase my work and approach to development.</p>
+            </div>
+            <div class="portfolio-filter reveal">
+                <button class="filter-btn active" data-filter="all" onclick="filterPortfolio('all', this)">Websites</button>
+                <button class="filter-btn" data-filter="dental" onclick="filterPortfolio('dental', this)">Dental Websites</button>
+                <button class="filter-btn" data-filter="ISP" onclick="filterPortfolio('ISP', this)">ISP Websites</button>
+                <button class="filter-btn" data-filter="BJJ" onclick="filterPortfolio('BJJ', this)">BJJ Websites</button>
+                <button class="filter-btn" data-filter="teretana" onclick="filterPortfolio('teretana', this)">Gym Website</button>
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <a href="./Example-of-modern-dental-web-page/index.html" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal" data-category="dental">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./images/Screenshot-mobilno/Moderna-dentalna-web-stranica-mobitel.jpg">
+                        <img src="./images/Screenshot-dekstop/Moderna-dentalna-web-stranica-dekstop.jpg" alt="Screenshot of a modern dental website example" class="portfolio-img">
+                    </picture>
+                    <span class="category-badge">Website</span>
+                    <div class="portfolio-overlay">
+                        <h4>Sample official website</h4>
+                        <p>Example of a modern website for a dental clinic</p>
+                    </div>
+                </a>
+
+                <a href="./Example-of-dental-web-page/index.html" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal reveal-delay-1" data-category="dental">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./images/Screenshot-mobilno/Dentalna-web-stranica-mobitel.jpg">
+                        <img src="./images/Screenshot-dekstop/Dentalna-web-stranica-dekstop.jpg" alt="Screenshot of a dental website example" class="portfolio-img">
+                    </picture>
+                    <span class="category-badge">Website</span>
+                    <div class="portfolio-overlay">
+                        <h4>Sample official website</h4>
+                        <p>Example of a website for a dental clinic</p>
+                    </div>
+                </a>
+
+                <a href="./Example-of-isp-web-page/index.html" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal reveal-delay-1" data-category="ISP">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./images/Screenshot-mobilno/ISP-web-stranica-mobitel.jpg">
+                        <img src="./images/Screenshot-dekstop/ISP-web-stranica-dekstop.jpg" alt="Screenshot of an Internet service provider website example" class="portfolio-img">
+                    </picture>
+                    <span class="category-badge">Website</span>
+                    <div class="portfolio-overlay">
+                        <h4>Sample official website</h4>
+                        <p>Example of a website for ISP providers</p>
+                    </div>
+                </a>
+
+                <a href="./Example-of-BJJ-web-page/index.html" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal reveal-delay-1" data-category="BJJ">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./images/Screenshot-mobilno/BJJ-web-stranica-mobitel.jpg">
+                        <img src="./images/Screenshot-dekstop/BJJ-web-stranica-dekstop.jpg" alt="Screenshot of a Brazilian Jiu-Jitsu website example" class="portfolio-img">
+                    </picture>
+                    <span class="category-badge">Website</span>
+                    <div class="portfolio-overlay">
+                        <h4>Sample official website</h4>
+                        <p>Example of a website for a Brazilian Jiu-Jitsu club</p>
+                    </div>
+                </a>
+
+                <a href="./Example-of-gym-web-page/index.html" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal reveal-delay-1" data-category="teretana">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./images/Screenshot-mobilno/Web-stranica-za-teretanu-mobitel.jpg">
+                        <img src="./images/Screenshot-dekstop/Web-stranica-za-teretanu-dekstop.jpg" alt="Screenshot of a gym website example" class="portfolio-img">
+                    </picture>
+                    <span class="category-badge">Website</span>
+                    <div class="portfolio-overlay">
+                        <h4>Sample official website</h4>
+                        <p>Example of a website for a gym</p>
+                    </div>
+                </a>
+
+                <a href="#contact" class="portfolio-card reveal" data-category="all">
+                    <div class="portfolio-order-box">
+                        <p class="gradient-text-cyan">Order now</p>
+                    </div>
+                    <span class="category-badge">Website</span>
+                    <div class="portfolio-overlay">
+                        <h4>Your custom website</h4>
+                        <p>Tell me about your project</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    SKILLS SECTION
+    ============================================ -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">Technologies and tools I use to build top-notch web solutions.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-code" aria-hidden="true"></i> Frontend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-percent="45"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS3</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-percent="45"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript (ES6+)</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-percent="10"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category reveal reveal-delay-1">
+                    <h3><i class="fas fa-tools" aria-hidden="true"></i> Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>GitHub</span>
+                            <span>2%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-percent="2"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>VS Code</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-percent="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>AI</span>
+                            <span>28%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-percent="28"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category reveal reveal-delay-1">
+                    <h3><i class="fas fa-tools" aria-hidden="true"></i> Backend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-percent="50"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Express.js</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-percent="50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    CONTACT SECTION
+    ============================================ -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">Have a project in mind? Get in touch and let's turn your idea into reality.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <a class="remove-styling" href="mailto:imrrstudioo@gmail.com">
+                            <div class="contact-item-content">
+                                <h4>Email</h4>
+                                <p>imrrstudioo@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form glass-card reveal reveal-delay-1">
+                    <form action="https://imrrstudioo.com/poslano" method="post" id="contactForm">
+                        <div class="form-group">
+                            <label for="ime">Full name *</label>
+                            <input type="text" id="ime" name="ime" placeholder="Your name" required>
+                        </div>
+                        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="Your @email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Describe your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 ImrStudio. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/imransabic" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script> 
+</body>
+</html>

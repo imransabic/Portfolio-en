@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BJJ</title>
+<meta name="description" content="Brazilian Jiu-Jitsu club in your town. Programs for kids, beginners and advanced students. Book a free trial class.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div id="loader">
+  <div>
+    <div class="loader__belt"></div>
+    <div class="loader__txt">BJJ</div>
+  </div>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner container">
+    <a href="#pocetna" class="logo" aria-label="BJJ your town">
+      <span class="logo__mark">BJJ</span>
+      <span class="logo__text">
+        <span class="logo__name">U</span>
+        <span class="logo__sub">Your Town</span>
+      </span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#o-nama">About</a>
+      <a href="#programi">Programs</a>
+      <a href="#raspored">Schedule</a>
+      <a href="#treneri">Coaches</a>
+      <a href="#clanarine">Membership</a>
+    </nav>
+
+    <div class="nav__cta">
+      <a href="#kontakt" class="btn btn--primary btn--sm">Free trial class</a>
+      <button class="burger" id="burger" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE DRAWER ============ -->
+<nav class="drawer" id="drawer">
+  <a href="#o-nama"    style="--i:0">About</a>
+  <a href="#programi"  style="--i:1">Programs</a>
+  <a href="#raspored"  style="--i:2">Schedule</a>
+  <a href="#treneri"   style="--i:3">Coaches</a>
+  <a href="#clanarine" style="--i:4">Membership</a>
+  <a href="#kontakt"   style="--i:5">Contact</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="pocetna">
+  <div class="hero__bg">
+    <div class="orb orb--1" data-parallax="0.03"></div>
+    <div class="orb orb--2" data-parallax="-0.025"></div>
+    <div class="orb orb--3" data-parallax="0.02"></div>
+    <div class="hero__grid"></div>
+    <div class="hero__noise"></div>
+    <div class="hero__fade"></div>
+  </div>
+
+  <div class="hero__content container">
+    <p class="hero__eyebrow"><span class="dot"></span>Your Town · Founded 2020</p>
+
+    <h1 class="hero__title">
+      <span class="line"><span>Brazilian</span></span>
+      <span class="line"><span class="outline">Jiu&nbsp;Jitsu</span></span>
+      <span class="line"><span class="accent">Club</span></span>
+    </h1>
+
+    <p class="hero__sub">
+      An art that combines technique, patience and strength. Learn to defend yourself,
+      stay humble and progress — one belt at a time.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#kontakt" class="btn btn--primary">
+        Book a free trial class
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#raspored" class="btn btn--ghost">View schedule</a>
+    </div>
+
+    <div class="hero__meta">
+      <div><strong>6+</strong><span>Years running</span></div>
+      <div><strong>50+</strong><span>Active members</span></div>
+      <div><strong>3</strong><span>Coaches</span></div>
+      <div><strong>4</strong><span>Classes per day</span></div>
+    </div>
+  </div>
+
+  <div class="badge" aria-hidden="true">
+    <svg class="badge__ring" viewBox="0 0 200 200">
+      <defs>
+        <path id="circlePath" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/>
+      </defs>
+      <text><textPath href="#circlePath" startOffset="0">BRAZILIAN JIU JITSU · ZAGREB · SINCE 2012 · </textPath></text>
+    </svg>
+    <div class="badge__core"><span>BJJ</span></div>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <span class="scroll-cue__line"></span>
+  </div>
+</section>
+
+<!-- ============ BELT MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track" id="marqueeTrack">
+    <span class="marquee__item"><i class="belt-white"></i>White belt</span>
+    <span class="marquee__item"><i class="belt-blue"></i>Blue belt</span>
+    <span class="marquee__item"><i class="belt-purple"></i>Purple belt</span>
+    <span class="marquee__item"><i class="belt-brown"></i>Brown belt</span>
+    <span class="marquee__item"><i class="belt-black"></i>Black belt</span>
+    <span class="marquee__item"><i class="belt-white"></i>White belt</span>
+    <span class="marquee__item"><i class="belt-blue"></i>Blue belt</span>
+    <span class="marquee__item"><i class="belt-purple"></i>Purple belt</span>
+    <span class="marquee__item"><i class="belt-brown"></i>Brown belt</span>
+    <span class="marquee__item"><i class="belt-black"></i>Black belt</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="o-nama">
+  <div class="container about__grid">
+    <div class="about__text">
+      <p class="eyebrow reveal">About the club</p>
+      <h2 class="section-title reveal" style="--d:.05s">
+        A place where<br><em>character</em> is built
+      </h2>
+      <p class="lead reveal" style="--d:.1s;margin-top:22px">
+        BJJ in your town is a club dedicated to authentic Brazilian Jiu-Jitsu —
+        a sport with no limits on age, gender or body type.
+      </p>
+      <p class="lead reveal" style="--d:.15s;margin-top:18px">
+        Our philosophy is simple: technique beats strength. Whether you're here
+        for self-defense, competition or fitness, you'll find your place on the mats.
+      </p>
+
+      <ul class="about__list">
+        <li class="reveal" style="--d:.2s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Classes are taught exclusively by black and brown belt holders</span>
+        </li>
+        <li class="reveal" style="--d:.25s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Programs tailored for kids from age 5, beginners and competitors</span>
+        </li>
+        <li class="reveal" style="--d:.3s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Over 400 m² of mat space in a modern facility in the heart of your town</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="about__visual reveal reveal--scale" style="--d:.15s">
+      <div class="about__panel">
+        <div class="about__pattern"></div>
+        <div class="about__quote">
+          "Stay humble.<br>Always <span>learn</span>."
+        </div>
+      </div>
+      <div class="float-card float-card--1">
+        <strong>6+</strong><span>Years running</span>
+      </div>
+      <div class="float-card float-card--2">
+        <strong>50+</strong><span>Members</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats">
+  <div class="container">
+    <div class="stats__grid">
+      <div class="stat reveal" style="--d:0s">
+        <div class="stat__num"><span data-count="50">0</span>+</div>
+        <div class="stat__label">Active members</div>
+      </div>
+      <div class="stat reveal" style="--d:.1s">
+        <div class="stat__num"><span data-count="6">0</span>+</div>
+        <div class="stat__label">Years of experience</div>
+      </div>
+      <div class="stat reveal" style="--d:.2s">
+        <div class="stat__num"><span data-count="10">0</span></div>
+        <div class="stat__label">Medal winners</div>
+      </div>
+      <div class="stat reveal" style="--d:.3s">
+        <div class="stat__num"><span data-count="4">0</span></div>
+        <div class="stat__label">Classes per day</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROGRAMS ============ -->
+<section class="section" id="programi">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">Programs</p>
+      <h2 class="section-title reveal" style="--d:.05s">Something for<br>every<em>one</em></h2>
+      <p class="lead reveal" style="--d:.1s">
+        No matter your experience level or age, we have a program for you.
+        All classes include drilling, sparring and conditioning.
+      </p>
+    </div>
+
+    <div class="programs__grid">
+      <article class="pcard reveal" style="--d:0s">
+        <div class="pcard__num">01</div>
+        <div class="pcard__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 6.9H21l-5.4 4 2 6.6L12 15.4 6.4 19.5l2-6.6L3 8.9h6.6z"/></svg>
+        </div>
+        <h3>BJJ Fundamentals</h3>
+        <p>An introduction to jiu-jitsu — positions, basic techniques, escapes and core principles. Ideal for complete beginners.</p>
+        <div class="pcard__meta">
+          <span class="tag tag--gold">Beginners</span>
+          <span class="tag">75 min</span>
+          <span class="tag">Gi</span>
+        </div>
+      </article>
+
+      <article class="pcard reveal" style="--d:.08s">
+        <div class="pcard__num">02</div>
+        <div class="pcard__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h8l-1 8 10-12h-8z"/></svg>
+        </div>
+        <h3>Advanced Gi</h3>
+        <p>Advanced techniques, complex transitions, guard passing and competition tactics for more experienced students.</p>
+        <div class="pcard__meta">
+          <span class="tag tag--gold">Advanced</span>
+          <span class="tag">90 min</span>
+          <span class="tag">Gi</span>
+        </div>
+      </article>
+
+      <article class="pcard reveal" style="--d:.16s">
+        <div class="pcard__num">03</div>
+        <div class="pcard__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
+        </div>
+        <h3>No-Gi Grappling</h3>
+        <p>No kimono — faster pace, wrestling, submission grappling and preparation for MMA and ADCC rules.</p>
+        <div class="pcard__meta">
+          <span class="tag tag--gold">All levels</span>
+          <span class="tag">75 min</span>
+          <span class="tag">No-Gi</span>
+        </div>
+      </article>
+
+      <article class="pcard reveal" style="--d:0s">
+        <div class="pcard__num">04</div>
+        <div class="pcard__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+        </div>
+        <h3>Kids BJJ</h3>
+        <p>A program for kids aged 5 to 14 — developing coordination, discipline, confidence and respect.</p>
+        <div class="pcard__meta">
+          <span class="tag tag--gold">Ages 5–14</span>
+          <span class="tag">50 min</span>
+          <span class="tag">Gi</span>
+        </div>
+      </article>
+
+      <article class="pcard reveal" style="--d:.08s">
+        <div class="pcard__num">05</div>
+        <div class="pcard__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Women's BJJ</h3>
+        <p>A women-only class — a safe environment focused on self-defense and realistic attack scenarios.</p>
+        <div class="pcard__meta">
+          <span class="tag tag--gold">Women only</span>
+          <span class="tag">70 min</span>
+          <span class="tag">Gi / No-Gi</span>
+        </div>
+      </article>
+
+      <article class="pcard reveal" style="--d:.16s">
+        <div class="pcard__num">06</div>
+        <div class="pcard__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </div>
+        <h3>Open Mat</h3>
+        <p>Free sparring with no structured class. Come, roll and exchange knowledge with others.</p>
+        <div class="pcard__meta">
+          <span class="tag tag--gold">All levels</span>
+          <span class="tag">120 min</span>
+          <span class="tag">Gi / No-Gi</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCHEDULE ============ -->
+<section class="section schedule" id="raspored">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">Schedule</p>
+      <h2 class="section-title reveal" style="--d:.05s">Weekly training <em>plan</em></h2>
+      <p class="lead reveal" style="--d:.1s">
+        Doors open 15 minutes before every class. Your first class is always free —
+        just bring comfortable clothes and a water bottle.
+      </p>
+    </div>
+
+    <div class="tabs reveal" role="tablist" style="--d:.15s">
+      <button class="tab is-active" data-day="pon" role="tab">Monday</button>
+      <button class="tab" data-day="uto" role="tab">Tuesday</button>
+      <button class="tab" data-day="sri" role="tab">Wednesday</button>
+      <button class="tab" data-day="cet" role="tab">Thursday</button>
+      <button class="tab" data-day="pet" role="tab">Friday</button>
+      <button class="tab" data-day="sub" role="tab">Saturday</button>
+    </div>
+
+    <div class="schedule-day is-active" data-day="pon">
+      <div class="srow"><div class="srow__time">07:00</div><div><div class="srow__name">BJJ Fundamentals</div><div class="srow__sub">Gi · beginners</div></div><div class="srow__coach">Marko Horvat</div><span class="tag srow__level">Beginners</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">18:00</div><div><div class="srow__name">Kids BJJ</div><div class="srow__sub">Gi · ages 5–14</div></div><div class="srow__coach">Ivana Kovač</div><span class="tag srow__level">Kids</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">19:30</div><div><div class="srow__name">Advanced Gi</div><div class="srow__sub">Gi · blue belt and up</div></div><div class="srow__coach">Luka Novak</div><span class="tag srow__level">Advanced</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">21:00</div><div><div class="srow__name">No-Gi Grappling</div><div class="srow__sub">No kimono · all levels</div></div><div class="srow__coach">Luka Novak</div><span class="tag srow__level">All levels</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+    </div>
+
+    <div class="schedule-day" data-day="uto">
+      <div class="srow"><div class="srow__time">07:00</div><div><div class="srow__name">No-Gi Grappling</div><div class="srow__sub">No kimono · all levels</div></div><div class="srow__coach">Luka Novak</div><span class="tag srow__level">All levels</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">17:00</div><div><div class="srow__name">Women's BJJ</div><div class="srow__sub">Women only · all levels</div></div><div class="srow__coach">Ivana Kovač</div><span class="tag srow__level">Women only</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">19:30</div><div><div class="srow__name">BJJ Fundamentals</div><div class="srow__sub">Gi · beginners</div></div><div class="srow__coach">Marko Horvat</div><span class="tag srow__level">Beginners</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+    </div>
+
+    <div class="schedule-day" data-day="sri">
+      <div class="srow"><div class="srow__time">07:00</div><div><div class="srow__name">BJJ Fundamentals</div><div class="srow__sub">Gi · beginners</div></div><div class="srow__coach">Marko Horvat</div><span class="tag srow__level">Beginners</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">18:00</div><div><div class="srow__name">Kids BJJ</div><div class="srow__sub">Gi · ages 5–14</div></div><div class="srow__coach">Ivana Kovač</div><span class="tag srow__level">Kids</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">19:30</div><div><div class="srow__name">Advanced Gi</div><div class="srow__sub">Gi · blue belt and up</div></div><div class="srow__coach">Luka Novak</div><span class="tag srow__level">Advanced</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">21:00</div><div><div class="srow__name">Open Mat</div><div class="srow__sub">Free sparring</div></div><div class="srow__coach">All coaches</div><span class="tag srow__level">All levels</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+    </div>
+
+    <div class="schedule-day" data-day="cet">
+      <div class="srow"><div class="srow__time">07:00</div><div><div class="srow__name">No-Gi Grappling</div><div class="srow__sub">No kimono · all levels</div></div><div class="srow__coach">Luka Novak</div><span class="tag srow__level">All levels</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">17:00</div><div><div class="srow__name">Women's BJJ</div><div class="srow__sub">Women only · all levels</div></div><div class="srow__coach">Ivana Kovač</div><span class="tag srow__level">Women only</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">19:30</div><div><div class="srow__name">BJJ Fundamentals</div><div class="srow__sub">Gi · beginners</div></div><div class="srow__coach">Marko Horvat</div><span class="tag srow__level">Beginners</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+    </div>
+
+    <div class="schedule-day" data-day="pet">
+      <div class="srow"><div class="srow__time">07:00</div><div><div class="srow__name">BJJ Fundamentals</div><div class="srow__sub">Gi · beginners</div></div><div class="srow__coach">Marko Horvat</div><span class="tag srow__level">Beginners</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">18:00</div><div><div class="srow__name">Kids BJJ</div><div class="srow__sub">Gi · ages 5–14</div></div><div class="srow__coach">Ivana Kovač</div><span class="tag srow__level">Kids</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">19:30</div><div><div class="srow__name">Competition training</div><div class="srow__sub">Tournament preparation</div></div><div class="srow__coach">Luka Novak</div><span class="tag srow__level">Advanced</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+    </div>
+
+    <div class="schedule-day" data-day="sub">
+      <div class="srow"><div class="srow__time">10:00</div><div><div class="srow__name">Open Mat</div><div class="srow__sub">Gi & No-Gi · free rolling</div></div><div class="srow__coach">All coaches</div><span class="tag srow__level">All levels</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+      <div class="srow"><div class="srow__time">12:00</div><div><div class="srow__name">Kids BJJ — advanced</div><div class="srow__sub">Gi · ages 8–14</div></div><div class="srow__coach">Ivana Kovač</div><span class="tag srow__level">Kids</span><div class="srow__arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COACHES ============ -->
+<section class="section" id="treneri">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">Coaches</p>
+      <h2 class="section-title reveal" style="--d:.05s">The people behind the <em>mats</em></h2>
+      <p class="lead reveal" style="--d:.1s">
+        Our team consists of experienced instructors with international competition
+        experience and years of coaching background.
+      </p>
+    </div>
+
+    <div class="coaches__grid">
+      <article class="coach reveal" style="--d:0s">
+        <div class="coach__avatar">MH</div>
+        <h3>Your name</h3>
+        <div class="coach__rank">Black belt · 3rd degree</div>
+        <p>Club founder and head instructor. Over 18 years on the mats, multiple-time national champion and European medalist.</p>
+      </article>
+
+      <article class="coach reveal" style="--d:.1s">
+        <div class="coach__avatar">IK</div>
+        <h3>Your name</h3>
+        <div class="coach__rank">Brown belt</div>
+        <p>Leads the women's and kids' programs. Specializes in self-defense and working with beginners, with 8 years of coaching experience.</p>
+      </article>
+
+      <article class="coach reveal" style="--d:.2s">
+        <div class="coach__avatar">LN</div>
+        <h3>Your name</h3>
+        <div class="coach__rank">Black belt · 1st degree</div>
+        <p>Head of the No-Gi and competition programs. ADCC competitor and coach to several professional MMA fighters.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="section" id="clanarine" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head" style="margin-inline:auto;text-align:center">
+      <p class="eyebrow reveal" style="justify-content:center">Membership</p>
+      <h2 class="section-title reveal" style="--d:.05s">Transparent <em>pricing</em></h2>
+      <p class="lead reveal" style="--d:.1s;margin-inline:auto">
+        No contracts, no hidden fees. Your first class is always free.
+      </p>
+    </div>
+
+    <div class="pricing__grid">
+      <article class="price reveal" style="--d:0s">
+        <div class="price__name">Kids</div>
+        <p class="price__desc">For kids aged 5 to 14</p>
+        <div class="price__amount"><strong>35</strong><span>KM / month</span></div>
+        <ul class="price__list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>3 classes per week</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Gi rental available</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Parent progress updates</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--ghost">Choose plan</a>
+      </article>
+
+      <article class="price price--featured reveal" style="--d:.1s">
+        <div class="price__name">Standard</div>
+        <p class="price__desc">Unlimited access to all classes</p>
+        <div class="price__amount"><strong>65</strong><span>KM / month</span></div>
+        <ul class="price__list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Unlimited classes (Gi + No-Gi)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Access to Open Mat</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Seminar(s) once a year</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Belt promotion included</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--primary">Choose plan</a>
+      </article>
+
+      <article class="price reveal" style="--d:.2s">
+        <div class="price__name">Competitor</div>
+        <p class="price__desc">For those entering tournaments</p>
+        <div class="price__amount"><strong>100</strong><span>KM / month</span></div>
+        <ul class="price__list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Everything in Standard</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Individual training plan</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Video sparring analysis</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Tournament entry fees covered</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--ghost">Choose plan</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">Testimonials</p>
+      <h2 class="section-title reveal" style="--d:.05s">What our <em>members</em> say</h2>
+    </div>
+
+    <div class="quotes">
+      <article class="quote reveal" style="--d:0s">
+        <div class="quote__mark">"</div>
+        <p>I came in with zero experience and 15kg overweight. After a year, not only am I in shape, but I've found a crew that's become my second family.</p>
+        <div class="quote__author">
+          <div class="quote__ava">TP</div>
+          <div><strong>Your name</strong><span>Member · 2 years</span></div>
+        </div>
+      </article>
+
+      <article class="quote reveal" style="--d:.1s">
+        <div class="quote__mark">"</div>
+        <p>As a woman, I was looking for a safe place to train. Here I found exactly that — support, knowledge and a space where I never feel like an outsider.</p>
+        <div class="quote__author">
+          <div class="quote__ava">MB</div>
+          <div><strong>Your name</strong><span>Member · 3 years</span></div>
+        </div>
+      </article>
+
+      <article class="quote reveal" style="--d:.2s">
+        <div class="quote__mark">"</div>
+        <p>My son started at age 7. Besides learning to defend himself, he's become more disciplined and confident. The coaches are excellent with kids.</p>
+        <div class="quote__author">
+          <div class="quote__ava">DK</div>
+          <div><strong>Your name</strong><span>Parent</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="kontakt">
+  <div class="container contact__grid">
+    <div>
+      <p class="eyebrow reveal">Contact</p>
+      <h2 class="section-title reveal" style="--d:.05s">Come to a<br><em>free</em> class</h2>
+      <p class="lead reveal" style="--d:.1s;margin-top:20px">
+        Fill out the form and we'll get back to you within 24 hours. Your first class
+        is free with no obligation.
+      </p>
+
+      <div class="info-list">
+        <div class="info reveal" style="--d:.15s">
+          <div class="info__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          </div>
+          <div><strong>Address</strong><span>Your address</span></div>
+        </div>
+        <div class="info reveal" style="--d:.2s">
+          <div class="info__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg>
+          </div>
+          <div><strong>Phone</strong><span>+387 91 234 5678</span></div>
+        </div>
+        <div class="info reveal" style="--d:.25s">
+          <div class="info__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+          </div>
+          <div><strong>Email</strong><span>info@bjj.ba</span></div>
+        </div>
+      </div>
+    </div>
+
+    <form class="form reveal reveal--scale" id="contactForm" style="--d:.15s" novalidate>
+      <div class="form__row">
+        <div class="field">
+          <label for="ime">Full name</label>
+          <input type="text" id="ime" name="ime" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="tel">Phone</label>
+          <input type="tel" id="tel" name="tel" placeholder="+387 91 ..." required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="mail">Email address</label>
+        <input type="email" id="mail" name="mail" placeholder="Email" required>
+      </div>
+      <div class="field">
+        <label for="program">Program you're interested in</label>
+        <select id="program" name="program">
+          <option>BJJ Fundamentals (beginners)</option>
+          <option>Advanced Gi</option>
+          <option>No-Gi Grappling</option>
+          <option>Kids BJJ</option>
+          <option>Women's BJJ</option>
+          <option>Competition program</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="poruka">Message (optional)</label>
+        <textarea id="poruka" name="poruka" placeholder="Your experience level, what you're looking for..."></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary" style="width:100%">
+        Send application
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <p class="form__note">We reply within 24 hours · First class free</p>
+      <div class="form__success" id="formSuccess">Thank you! Your application has been sent — we'll be in touch soon.</div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a href="#pocetna" class="logo">
+          <span class="logo__mark">BJJ</span>
+          <span class="logo__text">
+            <span class="logo__name">U</span>
+            <span class="logo__sub">Your town</span>
+          </span>
+        </a>
+        <p>Brazilian Jiu-Jitsu club in your town. Technique, humility and community since 2020.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7h-2.4V12h2.4V9.8c0-2.4 1.4-3.8 3.6-3.8 1 0 2.1.2 2.1.2v2.3h-1.2c-1.2 0-1.5.7-1.5 1.5V12h2.6l-.4 2.9h-2.2v7A10 10 0 0022 12z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.5 7.2a2.8 2.8 0 00-2-2C18.8 4.7 12 4.7 12 4.7s-6.8 0-8.5.5a2.8 2.8 0 00-2 2A29 29 0 001 12a29 29 0 00.5 4.8 2.8 2.8 0 002 2c1.7.5 8.5.5 8.5.5s6.8 0 8.5-.5a2.8 2.8 0 002-2A29 29 0 0023 12a29 29 0 00-.5-4.8z"/><path d="M9.8 15.2V8.8l5.4 3.2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navigation</h4>
+        <div class="footer__links">
+          <a href="#o-nama">About</a>
+          <a href="#programi">Programs</a>
+          <a href="#raspored">Schedule</a>
+          <a href="#treneri">Coaches</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Programs</h4>
+        <div class="footer__links">
+          <a href="#programi">BJJ Fundamentals</a>
+          <a href="#programi">Advanced Gi</a>
+          <a href="#programi">No-Gi Grappling</a>
+          <a href="#programi">Kids BJJ</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <div class="footer__links">
+          <a href="tel:+385912345678">+387 91 234 5678</a>
+          <a href="mailto:info@alliancebjj.hr">info@vasemail.ba</a>
+          <a href="#kontakt">Your address</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> BJJ in your town. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script src="index.js"></script>
+</body>
+</html>
